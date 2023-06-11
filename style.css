@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    transition: 0.4s;
+}
+body{
+    background-color: #222222;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+#btn1{
+    border: 1px solid #bbbbbb;
+    background-color: transparent;
+    color: #bbbbbb;
+    padding: 5px;
+    cursor: pointer;
+    height: 30px;
+}
+#btn1:hover{
+    border-color: white;
+    color: white;
+}
+header nav{
+    display: flex;
+}
+nav a{
+    margin: 40px;
+    text-decoration: none;
+    color: #bbbbbb;
+}
+nav a:hover{
+    color: white;
+}
+#menu{
+    display: none;
+    background-color: transparent;
+    border: 0;
+}
+#btn-menu{
+    width: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(240deg) brightness(105%) contrast(101%); width: 30px;
+}
+main{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 30pt;
+    font-weight: 10;
+}
+#text{
+    color: #d1d1d1;
+    width: 400px;
+}
+#read{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+#container{
+    width: 700px;
+    height: 500px;
+    background-image: url(./interior-consultant-master/photo1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#profile-camp{
+    background-color: #222222;
+    box-shadow: 0 0 8px black;
+    padding: 15px 30px;
+}
+#profile-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 10px;
+}
+#name{
+    color: #d1d1d1;
+}
+#lastname{
+    color: #a7a7a7;
+}
+#biografia{
+    color: white;
+}
+@media screen and (max-width: 1000px) {
+    #container{
+        justify-content: center;
+        
+    }
+}
+@media screen and (max-width: 700px) {
+    header nav{
+        flex-direction: column;
+    }
+    nav a{
+        display: none;
+    }
+    #text{
+        width: 280px;
+    }
+    #menu{
+        display: flex;
+        justify-content: center;
+    }
+}
